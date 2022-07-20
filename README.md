@@ -5,7 +5,8 @@ Instal:
 Unpack the ZIP folder either directly into your /mod folder or into a seperate folder, and pull the .mod file out of EKGovernments. Place the .mod file in the /mod folder alongside EkGovernments folder and baddabing baddaboom!
 
 Summary:
-This is a submod for the mod Elder Kings, focusing on governments for several different varieties of cultures and or religions. Current governments include but are not limited to; House Council for Dunmer, Ashkhanate for Ashlanders, Shorekhanate for Chimer, Dreaming Court for Sixth House Dagoth Ur Worshipers, and Elven Ceremoniarchy for Altmer.
+This is a submod for the mod Elder Kings, focusing on governments for several different varieties of cultures and or religions. Current governments include but are not limited to; 
+House Council for Dunmer, Ashkhanate for Ashlanders, Shorekhanate for Chimer, Dreaming Court for Sixth House Dagoth Ur Worshipers, and Elven Ceremoniarchy for Altmer.
 
 Plans:
 There is a plan to include other governments for culture of the following, Bosmer, Maormer, & Falmer, with potential for governments for Redguards & Argonians. Eventually, I *might* make governments for other members of Akavir, *maybe*.
