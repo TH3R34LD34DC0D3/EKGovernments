@@ -51,4 +51,16 @@ spriteTypes = {
 		name = "GFX_icon_dagoth_government"
 		texturefile = "gfx\\interface\\government_icon_dagoth.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_dragoncult_government"
+		texturefile = "gfx\\interface\\government_icon_dragoncult.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_altmer_government"
+		texturefile = "gfx\\interface\\government_icon_altmer.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_pirate_government"
+		texturefile = "gfx\\interface\\government_icon_pirate.dds"
+	}
 }

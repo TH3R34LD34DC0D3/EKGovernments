@@ -1,0 +1,52 @@
+mer_pantheon = {
+	auriel = {
+		graphical_culture = mesoamericangfx
+		merge_republic_interface = yes
+
+		icon = 17
+		heresy_icon = 18
+		color = { 1.0 1.0 0.6 }
+
+		crusade_name = "INQUISITION_WAR"
+		scripture_name = THE_MANIFEST
+
+		piety_name = FAVOUR
+		priest_title = PRIEST
+		
+		high_god_name = GOD_AURIEL
+		
+		god_names = {
+			GOD_AURIEL GOD_STENDARR GOD_MARA GOD_XARXES GOD_MAGNUS GOD_PHYNASTER GOD_JEPHRE GOD_SYRABANE
+		}
+		
+		evil_god_names = {
+			DAEDRA DEMONS DAEDRIC_PRINCES
+		}
+		#uses_decadence = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		#autocephaly = yes
+		allow_rivermovement = yes
+		allow_looting = yes
+		can_call_crusade = no # GHW are disabled in EK, so it just clutters the religious features screen
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		priests_can_marry = yes
+		#investiture = yes
+		female_temple_holders = yes
+		can_grant_invasion_cb = invasion
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		short_reign_opinion_year_mult = 4 # The default is 2
+		has_heir_designation = yes
+		aggression = 1.1
+		
+		intermarry = blacksap
+		intermarry = eight_divines
+		intermarry = nine_divines
+		intermarry = green_pact
+		
+		#religious_clothing_head = 11
+		#religious_clothing_priest = 11
+	}
+}
