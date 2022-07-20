@@ -22,6 +22,8 @@ republic_governments = {
 		frame_suffix = "_merchantrepublic"
 		title_prefix = "city_"
 		potential = {
+			NOT = { religion = sixth_house }
+			NOT = { is_government_potential = pirate_government }
 			NAND = {
 				controls_religion = yes
 				#NOT = { religion_group = muslim }

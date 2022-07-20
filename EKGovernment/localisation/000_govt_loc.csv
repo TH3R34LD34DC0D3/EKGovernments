@@ -6,6 +6,10 @@ ashkhanate_government;Ashkhanate;;;;;;;;;;;;;x
 ashkhanate_government_desc;Ashkhanates are a collection of Ashlanders who live in nomadic tribes who ocasionally take up residence in old castles for defence, and reject the ideas and culture of the House Dunmer.;;;;;;;;;;;;;x
 dagoth_government;Dreaming Court;;;;;;;;;;;;;x
 dagoth_government_desc;Dreaming Courtiers oppose the Tribunal in a manner much different from other non-believers. Dreamers scheme in the shadows and seek to prepare for the arival of their dreaming god.;;;;;;;;;;;;;x
+altmer_government;Elven Ceremoniarchy;;;;;;;;;;;;;x
+altmer_government_desc;The Elven Ceremoniarchy has its roots going as far as the Dawn Era. It is a type of government evolved around a strict social structure, traditions transmitted via visual, oral and written sources, and a complex system of protocol based on descendancy.;;;;;;;;;;;;;x
+pirate_government;Pirate Republic;;;;;;;;;;;;;x
+pirate_government_desc;Piracy is the act of attacking and raiding others in seek of gold and other treasures. The Pirate Code sees Pirates sharing their wealth to increase the prosperity of the Pirate Republic, and take wives o' plenty of course. (Pirates have reduced demense due to the nature of their Anarchy.);;;;;;;;;;;;;x
 confederacy_government;Confederacy;;;;;;;;;;;;;x
 confederacy_government_desc;A confederacy is based upon feudal government, featuring a loose association of autonomous rulers under the banner of a single individual. Unlike feudal government, a confederacy is never intended to be centralized, and only Elective Succession is allowed. A confederate ruler does not control their vassal levies, and must instead call them to war to fight on their behalf.;;;;;;;;;;;;;x
 imperial_commune_government;Imperial Commune;;;;;;;;;;;;;x

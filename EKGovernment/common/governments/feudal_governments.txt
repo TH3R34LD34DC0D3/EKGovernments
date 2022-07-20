@@ -35,23 +35,16 @@ feudal_governments = {
 			}
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
+			NOT = { is_government_potential = house_government }
+			NOT = { is_government_potential = chimer_government }
+			NOT = { is_government_potential = altmer_government }
+			NOT = { is_government_potential = ashkhanate_government }
+			NOT = { is_government_potential = dwemer_government }
+			NOT = { religion = sixth_house }
 			is_patrician = no
 			NAND = {
 				culture = orsimer
 				religion = daedra_malacath
-			}
-			NAND = {
-				culture = dunmer
-				religion_group = tribunal
-				higher_tier_than = baron
-			}
-			NAND = {
-				culture = chimer
-				higher_tier_than = baron
-			}
-			NAND = {
-				culture = ashlander
-				higher_tier_than = baron
 			}
 			NAND = {
 				culture = tsaesci

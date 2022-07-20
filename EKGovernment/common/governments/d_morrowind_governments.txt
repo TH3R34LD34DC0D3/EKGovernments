@@ -63,7 +63,7 @@ feudal_governments = {
 			imperial_commune_government
 			reformed_imperial_commune_government
 		}
-		frame_suffix = "_tamriel"
+		frame_suffix = "_dagoth"
 		potential = {
 			religion = sixth_house
 			is_patrician = no
