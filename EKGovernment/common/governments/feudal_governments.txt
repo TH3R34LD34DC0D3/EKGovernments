@@ -40,6 +40,9 @@ feudal_governments = {
 			NOT = { is_government_potential = altmer_government }
 			NOT = { is_government_potential = ashkhanate_government }
 			NOT = { is_government_potential = dwemer_government }
+			NOT = { is_government_potential = orgnumic_government }
+			NOT = { is_government_potential = anti_orgnumic_government }
+			NOT = { is_government_potential = bosmer_government }
 			NOT = { religion = sixth_house }
 			is_patrician = no
 			NAND = {

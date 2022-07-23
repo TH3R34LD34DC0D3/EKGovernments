@@ -113,6 +113,7 @@ feudal_governments = {
 		potential = {
 			culture = chimer
 			NOT = { religion = sixth_house }
+			higher_tier_than = BARON
 			is_patrician = no
 			NOT = { controls_religion = yes }
 		}

@@ -21,6 +21,7 @@ feudal_governments = {
 			NOT = { controls_religion = yes }
 			mercenary = no
 			culture = altmer
+			religion = auriel
 			NOT = { is_government_potential = undead_government }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }

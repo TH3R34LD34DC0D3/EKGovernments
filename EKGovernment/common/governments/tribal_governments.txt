@@ -50,6 +50,7 @@ tribal_governments = {
 			holy_order = no
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = undead_government }
+			NOT = { is_government_potential = bosmer_government }
 		}
 		
 		color = { 92 31 23 }

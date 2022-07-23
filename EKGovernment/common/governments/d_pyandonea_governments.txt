@@ -1,0 +1,107 @@
+feudal_governments = {
+	orgnumic_government = {
+
+		preferred_holdings = { CASTLE TEMPLE }
+		allowed_holdings = { 
+			CASTLE
+			TEMPLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL CITY
+		}
+		frame_suffix = "_romanimperial"
+		potential = { 
+			is_patrician = no
+			mercenary = no
+			culture = maormer
+			religion = pyandoneaic
+			higher_tier_than = BARON
+			NOT = { is_government_potential = undead_government }
+			NOT = { is_government_potential = roman_imperial_government }
+			NOT = { is_government_potential = order_government }
+		}
+
+
+		color = { 94 2 102 }
+
+		uses_piety_for_law_change = yes
+		dukes_called_kings = yes
+		barons_need_dynasty = yes
+		ignores_de_jure_laws = yes
+		can_build_forts = yes
+		can_build_castle = yes
+		can_build_city = yes
+		can_build_temple = yes
+		can_build_tribal = no
+		#uses_decadence = yes
+		can_usurp_kingdoms_and_empires = no
+		can_imprison_without_reason = yes
+		can_revoke_without_reason = no
+		can_create_empires = yes
+		can_grant_kingdoms_and_empires_to_other_government_group = yes
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+		free_retract_vassalage = yes
+		free_levies_in_offensive_war = yes
+		aggression = 2
+		women_can_take_consorts = yes
+		max_consorts = 3
+		builds_with_piety = { TEMPLE }
+		capital_move_delay = 600
+		## Modifiers
+	}
+
+	anti_orgnumic_government = {
+
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE
+			CITY
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		frame_suffix = "_romanimperial"
+		potential = { 
+			is_patrician = no
+			mercenary = no
+			culture = maormer
+			higher_tier_than = BARON
+			NOT = { religion = pyandoneaic }
+			NOT = { is_government_potential = undead_government }
+			NOT = { is_government_potential = roman_imperial_government }
+			NOT = { is_government_potential = order_government }
+		}
+
+
+		color = { 177 119 182 }
+
+		uses_prestige_for_law_change = yes
+		dukes_called_kings = yes
+		barons_need_dynasty = yes
+		ignores_de_jure_laws = yes
+		can_build_forts = yes
+		can_build_castle = yes
+		can_build_city = yes
+		can_build_temple = yes
+		can_build_tribal = no
+		#uses_decadence = yes
+		can_usurp_kingdoms_and_empires = no
+		can_imprison_without_reason = yes
+		can_revoke_without_reason = yes
+		can_create_empires = yes
+		can_grant_kingdoms_and_empires_to_other_government_group = yes
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+		free_retract_vassalage = no
+		free_levies_in_offensive_war = yes
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		aggression = 1.5
+		capital_move_delay = 600
+		## Modifiers
+	}
+}
