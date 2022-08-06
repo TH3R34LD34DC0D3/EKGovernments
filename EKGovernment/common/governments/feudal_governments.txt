@@ -39,7 +39,10 @@ feudal_governments = {
 			NOT = { is_government_potential = chimer_government }
 			NOT = { is_government_potential = altmer_government }
 			NOT = { is_government_potential = ashkhanate_government }
-			NOT = { is_government_potential = dwemer_government }
+			NOT = { is_government_potential = orgnumic_government }
+			NOT = { is_government_potential = anti_orgnumic_government }
+			NOT = { is_government_potential = bosmer_government }
+			NOT = { is_government_potential = ayleid_government }
 			NOT = { religion = sixth_house }
 			is_patrician = no
 			NAND = {
@@ -388,91 +391,5 @@ feudal_governments = {
 		can_grant_kingdoms_and_empires_to_other_government_group = yes
 		can_be_granted_kingdoms_and_empires_by_other_government = no
 		free_retract_vassalage = yes
-	}
-	
-	hagraven_coven_government = {
-		preferred_holdings = { CASTLE TEMPLE }
-		allowed_holdings = { 
-			CASTLE 
-			FORT
-			HOSPITAL
-			TEMPLE
-		}
-		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
-			TRIBAL
-		}
-		accepts_liege_governments = { # Gets the wrong religion modifier instead
-			muslim_government
-			mane_government
-			theocratic_feudal_government
-		}
-		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
-			#tribal_government
-		}
-		potential = {
-			always = no
-			trait = hagraven
-			OR = {
-				tier = KING
-				has_landed_title = d_hagraven
-			}
-			NOT = {
-				primary_title = {
-					OR = {
-						title = e_cyrodiil
-						title = e_tamriel
-					}
-				}
-			}
-			NOT = { is_government_potential = roman_imperial_government }
-			NOT = { is_government_potential = order_government }
-			is_patrician = no
-			# Cult of Malacath
-			NAND = {
-				culture = orsimer
-				religion = daedra_malacath
-			}
-			# Tsaesci Theocracy
-			NAND = {
-				culture = tsaesci
-				religion = five_courts
-				mercenary = no
-				holy_order = no
-			}
-			# Confederacy
-			OR = {
-				is_save_game = yes
-				NOT = { any_demesne_title = { title = k_colovia } }
-			}
-			# Imperial Commune
-			OR = {
-				is_save_game = yes
-				NOT = {
-					any_demesne_title = { title = k_heartlands }
-				}
-			}
-			#NAND = {
-			#	primary_title = {
-			#		title = e_tamriel
-			#	}
-			#}
-			NOT = { is_government_potential = undead_government }
-		}
-		
-		color = { 10 50 70 }
-		
-		vassal_call_to_arms = {
-			tribal_government
-		}
-		
-		dukes_called_kings = yes
-		barons_need_dynasty = yes
-
-		can_build_tribal = no
-		
-		ignore_in_vassal_limit_calculation = {
-			tribal_government
-		}
-		capital_move_delay = 600
 	}
 }

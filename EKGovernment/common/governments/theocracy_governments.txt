@@ -38,6 +38,10 @@ theocracy_governments = {
 				is_female = yes
 				religion_allows_male_temple_holders = yes
 			}
+			NOT = { is_government_potential = hagraven_coven_government }
+			NOT = { is_government_potential = altmer_government }
+			NOT = { is_government_potential = orgnumic_government }
+			NOT = { is_government_potential = dagoth_government }
 		}
 		
 		color = { 220 220 220 }

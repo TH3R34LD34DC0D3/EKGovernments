@@ -14,9 +14,12 @@ feudal_governments = {
 		}
 		frame_suffix = "_theocraticfeudal"
 		potential = {
-			culture = dunmer
+			culture_group = chimeris
+			NOT = { culture = orsimer }
+			NOT = { culture = ashlander }
 			religion_group = tribunal
 			NOT = { religion = sixth_house }
+			NOT = { is_government_potential = dagoth_government }
 			higher_tier_than = BARON
 			is_patrician = no
 			NOT = { controls_religion = yes }
@@ -92,7 +95,7 @@ feudal_governments = {
 		court_size_modifier = 10
 	}
 	chimer_government = {
-		preferred_holdings = { TRIBAL }
+		preferred_holdings = { TRIBAL CTIY }
 		allowed_holdings = {  
 			CITY
 			TRIBAL
@@ -113,6 +116,8 @@ feudal_governments = {
 		potential = {
 			culture = chimer
 			NOT = { religion = sixth_house }
+			NOT = { is_government_potential = dagoth_government }
+			higher_tier_than = BARON
 			is_patrician = no
 			NOT = { controls_religion = yes }
 		}
@@ -125,7 +130,9 @@ feudal_governments = {
 		uses_piety_for_law_change = yes
 		allow_looting = yes
 		dukes_called_kings = yes
-
+		builds_with_piety = {
+			TRIBAL FORT
+		}
 		barons_need_dynasty = yes
 		can_build_castle = no
 		can_build_city = yes
@@ -163,11 +170,12 @@ feudal_governments = {
 		potential = {
 			culture = ashlander
 			NOT = { religion = sixth_house }
+			NOT = { is_government_potential = dagoth_government }
 			is_patrician = no
 			NOT = { controls_religion = yes }
 		}
 		
-		color = { 138 156 143 }
+		color = { 106 108 109 }
 		
 		dukes_called_kings = yes
 		builds_with_prestige = {

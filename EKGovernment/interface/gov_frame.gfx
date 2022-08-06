@@ -25,7 +25,7 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_charframe_34_technocratic"
+		name = "GFX_charframe_34_dagoth"
 		texturefile = "gfx\\interface\\charframe_34_dagoth.dds"
 		noOfFrames = 6
 		allwaystransparent = yes

@@ -1,2 +1,0 @@
-altmer_government;Elven Ceremoniarchy;;;;;;;;;;;;;x
-altmer_government_desc;The Elven Ceremoniarchy has its roots going as far as the Dawn Era. It is a type of government evolved around a strict social structure, traditions transmitted via visual, oral and written sources, and a complex system of protocol based on descendancy.;;;;;;;;;;;;;x

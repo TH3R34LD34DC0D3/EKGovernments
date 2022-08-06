@@ -63,4 +63,32 @@ spriteTypes = {
 		name = "GFX_icon_pirate_government"
 		texturefile = "gfx\\interface\\government_icon_pirate.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_orgnumic_government"
+		texturefile = "gfx\\interface\\government_icon_orgnumic.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_anti_orgnumic_government"
+		texturefile = "gfx\\interface\\government_icon_anti_orgnumic.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_bosmer_government"
+		texturefile = "gfx\\interface\\government_icon_bosmer.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_ayleid_government"
+		texturefile = "gfx\\interface\\government_icon_ayleid.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_hagraven_coven_government"
+		texturefile = "gfx\\interface\\government_icon_hagraven_coven.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_bosmer_government"
+		texturefile = "gfx\\interface\\government_icon_bosmer.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_bosmeri_government"
+		texturefile = "gfx\\interface\\government_icon_bosmeri.dds"
+	}
 }
