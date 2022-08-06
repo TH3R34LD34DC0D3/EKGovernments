@@ -1,0 +1,94 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_icon_orsimer_government"
+		texturefile = "gfx\\interface\\government_icon_orsimer_government.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_matriarchy_government"
+		texturefile = "gfx\\interface\\government_icon_tsaesci.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_tamriel_government"
+		texturefile = "gfx\\interface\\government_icon_imperial_tamriel.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_confederacy_government"
+		texturefile = "gfx\\interface\\government_icon_confederacy.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_roman_imperial_government"
+		texturefile = "gfx\\interface\\government_icon_imperial_tamriel.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_imperial_commune_government"
+		texturefile = "gfx\\interface\\government_imperial_commune.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_reformed_imperial_commune_government"
+		texturefile = "gfx\\interface\\government_imperial_commune.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_mane_government"
+		texturefile = "gfx\\interface\\government_khajiit.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_undead_government"
+		texturefile = "gfx\\interface\\government_icon_undead.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_house_government"
+		texturefile = "gfx\\interface\\government_icon_house.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_chimer_government"
+		texturefile = "gfx\\interface\\government_icon_chimer.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_ashkhanate_government"
+		texturefile = "gfx\\interface\\government_icon_ashkhanate.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_dagoth_government"
+		texturefile = "gfx\\interface\\government_icon_dagoth.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_dragoncult_government"
+		texturefile = "gfx\\interface\\government_icon_dragoncult.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_altmer_government"
+		texturefile = "gfx\\interface\\government_icon_altmer.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_pirate_government"
+		texturefile = "gfx\\interface\\government_icon_pirate.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_orgnumic_government"
+		texturefile = "gfx\\interface\\government_icon_orgnumic.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_anti_orgnumic_government"
+		texturefile = "gfx\\interface\\government_icon_anti_orgnumic.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_bosmer_government"
+		texturefile = "gfx\\interface\\government_icon_bosmer.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_ayleid_government"
+		texturefile = "gfx\\interface\\government_icon_ayleid.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_hagraven_coven_government"
+		texturefile = "gfx\\interface\\government_icon_hagraven_coven.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_bosmer_government"
+		texturefile = "gfx\\interface\\government_icon_bosmer.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_bosmeri_government"
+		texturefile = "gfx\\interface\\government_icon_bosmeri.dds"
+	}
+}
