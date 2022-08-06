@@ -1,0 +1,41 @@
+feudal_governments = {
+	altmer_government = {
+
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE
+			TEMPLE
+			FORT
+			HOSPITAL
+		}
+		frame_suffix = "_theocracy"
+		potential = { 
+			is_patrician = no
+			NOT = { controls_religion = yes }
+			mercenary = no
+			culture = altmer
+			NOT = { is_government_potential = undead_government }
+			NOT = { is_government_potential = roman_imperial_government }
+			NOT = { is_government_potential = order_government }
+			NOT = { is_government_potential = dagoth_government }
+		}
+
+
+		color = { 255 220 0 }
+
+		uses_piety_for_law_change = yes
+		barons_need_dynasty = yes
+		uses_bride_price = yes
+		can_build_tribal = no
+		#uses_decadence = yes
+		can_usurp_kingdoms_and_empires = no
+		can_imprison_without_reason = no
+		can_create_empires = no
+		can_grant_kingdoms_and_empires_to_other_government_group = yes
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+
+		capital_move_delay = 600
+		## Modifiers
+		court_size_modifier = 10
+	}
+}

@@ -1,0 +1,46 @@
+# Dunmeri/Chimer House
+government_flavor = {
+	name = gov_dunmeri_house
+	graphics = GFX_evt_council_dunmer
+	priority = 1
+	trigger = {
+		government = house_government
+		culture = dunmer
+	}
+}
+
+government_flavor = {
+	name = gov_chimeri_house
+	graphics = GFX_evt_chimer_meeting
+	priority = 1
+	trigger = {
+		government = house_government
+		culture = chimer
+	}
+}
+
+government_flavor = {
+	name = gov_dunmeri_great_house
+	graphics = GFX_evt_council_dunmer
+	priority = 1
+	trigger = {
+		culture = dunmer
+		primary_title = {
+			is_dunmer_great_house_title = yes
+			tier = KING
+		}
+	}
+}
+
+government_flavor = {
+	name = gov_chimeri_great_house
+	graphics = GFX_evt_chimer_meeting
+	priority = 1
+	trigger = {
+		culture = chimer
+		primary_title = {
+			is_dunmer_great_house_title = yes
+			tier = KING
+		}
+	}
+}
