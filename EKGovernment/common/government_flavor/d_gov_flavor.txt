@@ -1,4 +1,4 @@
-# Dunmeri/Chimer House
+# Dunmeri/Chimer House Council
 government_flavor = {
 	name = gov_dunmeri_house
 	graphics = GFX_evt_council_dunmer
@@ -42,5 +42,101 @@ government_flavor = {
 			is_dunmer_great_house_title = yes
 			tier = KING
 		}
+	}
+}
+
+# Ashkhanate/Shorehanate
+government_flavor = {
+	name = gov_ashkhanate
+	graphics = GFX_evt_ashlanders
+	priority = 1
+	trigger = {
+		government = ashkhanate_government
+		culture = ashlander
+	}
+}
+government_flavor = {
+	name = gov_shorekhanate
+	graphics = GFX_evt_chimer_crowning
+	priority = 1
+	trigger = {
+		government = chimer_government
+		culture = chimer
+	}
+}
+
+# Dreaming Court
+government_flavor = {
+	name = gov_cult_of_dagoth
+	graphics = GFX_evt_dagoth
+	priority = 1
+	trigger = {
+		government = dagoth_government
+	}
+}
+
+# Altmer Cerimoniarch
+government_flavor = {
+	name = gov_altmer
+	graphics = GFX_evt_altmer_court
+	priority = 1
+	trigger = {
+		government = altmer_government
+		NOT = { has_law = succ_altmer_primo }
+	}
+}
+government_flavor = {
+	name = gov_altmer_2
+	graphics = GFX_evt_altmer_crowning
+	priority = 1
+	trigger = {
+		government = altmer_government
+		has_law = succ_altmer_primo
+	}
+}
+
+#Orgnumic Society/Sea Clans
+government_flavor = {
+	name = gov_orgnumic
+	graphics = GFX_evt_maormer_crowning
+	priority = 1
+	trigger = {
+		government = orgnumic_government
+	}
+}
+government_flavor = {
+	name = gov_seaclans
+	graphics = GFX_evt_k_seas
+	priority = 1
+	trigger = {
+		government = anti_orgnumic_government
+	}
+}
+
+#Bosmeri Fedualism/Jungle Tribes
+government_flavor = {
+	name = gov_bosmer
+	graphics = GFX_evt_bosmer_crowning
+	priority = 1
+	trigger = {
+		government = bosmer_government
+	}
+}
+government_flavor = {
+	name = gov_bosmeri
+	graphics = GFX_evt_bosmer_imga
+	priority = 1
+	trigger = {
+		government = bosmeri_government
+	}
+}
+
+#Ayleid League
+government_flavor = {
+	name = gov_ayleid
+	graphics = GFX_evt_ayleid_crowning
+	priority = 1
+	trigger = {
+		government = ayleid_government
 	}
 }
