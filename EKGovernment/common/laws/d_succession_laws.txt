@@ -1,0 +1,144 @@
+succession_laws = {
+	succ_house_selection = {	#Great House Selection
+		oldest_child_opinion = 5
+		child_opinion = -10
+		dynasty_opinion = 10
+		feudal_opinion = 10
+		
+		potential = {
+			is_government_potential = house_government
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = not_forced_tt
+				hidden_tooltip = {
+					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+				}
+			}
+		}
+
+		effect = {
+			succession = {
+				base_type = feudal_elective
+				voting_rules = great_house_selection
+			}
+		}
+
+	}
+	succ_altmer_primo = {
+		oldest_child_opinion = 10
+		youngest_child_opinion = -10
+		child_opinion = -5
+		dynasty_opinion = -5
+		potential = {
+			NAND = { 
+				has_law = succ_confederacy_elective 
+				OR = { 
+					has_flag = confederacy
+				}
+			}
+			NOT = { has_law = succ_imperial_commune_elective }
+			NOT = { ec_imperial_province_assignment_potential = yes }
+			NOR = {
+				title = e_cyrodiil
+				title = e_tamriel
+			}
+			NAND = {
+				OR = {
+					title = k_skyrim
+					title = e_nordic
+				}
+				holder_scope = {
+					OR = {
+						culture = nord
+						culture = skaal
+						culture = atmoran
+					}
+				}
+			}
+			holder_scope = {
+				is_merchant_republic = no
+				is_patrician = no
+				is_government_potential = altmer_government
+			}
+			is_dunmer_great_house_title = no
+		}
+		allow = {
+			conditional_tooltip = {
+				trigger = {
+					has_dlc = "Conclave"
+				}
+				OR = {
+					holder_scope = { # Viceroyalties can always have primogeniture if not muslim
+						show_scope_change = no
+						any_demesne_title = {
+							is_vice_royalty = yes
+						}
+					}
+					AND = {
+						holder_scope = {
+							show_scope_change = no
+							primary_title = {
+								show_scope_change = no
+								OR = {
+									has_law = ze_administration_laws_1
+									has_law = ze_administration_laws_2
+								}
+							}
+						}
+					}
+				}
+			}
+			conditional_tooltip = {
+				trigger = {
+					NOT = { has_dlc = "Conclave" }
+				}
+				OR = {
+					holder_scope = { # Viceroyalties can always have primogeniture if not muslim
+						show_scope_change = no
+						any_demesne_title = {
+							is_vice_royalty = yes
+						}
+					}
+					hidden_tooltip = {
+						has_crown_law_title = no
+					}
+					crownlaw_title = {
+						OR = {
+							has_law = crown_authority_3
+							has_law = crown_authority_4
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = not_forced_tt
+				hidden_tooltip = {
+					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+				}
+			}
+			conditional_tooltip = {
+				trigger = {
+					has_dlc = "Conclave"
+				}
+				custom_tooltip = {
+					text = forced_elective_tt
+					hidden_tooltip = {
+						NAND = { 
+							has_law = succession_voting_power_1
+							has_law = succ_feudal_elective
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			succession = primogeniture
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+}

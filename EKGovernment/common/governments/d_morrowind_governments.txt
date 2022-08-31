@@ -1,0 +1,200 @@
+feudal_governments = {
+	house_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			CITY
+			FORT
+			HOSPITAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			theocracy_government
+			imperial_commune_government
+			reformed_imperial_commune_government
+		}
+		frame_suffix = "_theocraticfeudal"
+		potential = {
+			culture_group = chimeris
+			NOT = { culture = orsimer }
+			NOT = { culture = ashlander }
+			religion_group = tribunal
+			NOT = { religion = sixth_house }
+			NOT = { is_government_potential = dagoth_government }
+			higher_tier_than = BARON
+			is_patrician = no
+			NOT = { controls_religion = yes }
+		}
+		
+		color = { 140 85 0 }
+		
+		allow_looting = yes
+		uses_prestige_for_law_change = yes
+		dukes_called_kings = no
+		barons_need_dynasty = yes
+		uses_bride_price = yes
+		can_build_castle = yes
+		can_build_city = yes
+		can_build_temple = yes
+		can_build_tribal = no
+		can_build_hospitals = yes
+		can_build_forts = yes
+		marriage_ignore_religion = yes
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		can_revoke_without_reason  = no
+		can_imprison_without_reason = no
+		capital_move_delay = 600
+		## Modifiers
+		court_size_modifier = 10
+	}
+	dagoth_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			TEMPLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_religion = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			muslim_government
+			theocracy_government
+			feudal_government
+			imperial_commune_government
+			reformed_imperial_commune_government
+		}
+		frame_suffix = "_dagoth"
+		potential = {
+			religion = sixth_house
+			is_patrician = no
+			NOT = { controls_religion = yes }
+		}
+		
+		color = { 82 0 0 }
+		
+		allow_looting = yes
+		uses_piety_for_law_change = yes
+		dukes_called_kings = no
+		barons_need_dynasty = yes
+		can_build_castle = yes
+		can_build_city = yes
+		can_build_temple = yes
+		can_build_tribal = yes
+		can_build_hospitals = yes
+		can_build_forts = yes
+		ignores_de_jure_laws = yes
+		vassal_call_to_arms = {
+			dagoth_government
+		}
+		capital_move_delay = 600
+		## Modifiers
+		demesne_size = -1
+		court_size_modifier = 10
+	}
+	chimer_government = {
+		preferred_holdings = { TRIBAL CTIY }
+		allowed_holdings = {  
+			CITY
+			TRIBAL
+			FORT
+			HOSPITAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			muslim_government
+			theocracy_government
+			feudal_government
+			imperial_commune_government
+			reformed_imperial_commune_government
+		}
+		free_revoke_on_governments_culture = {
+			tribal_government republic_government
+		}
+		frame_suffix = "_confucian"
+		potential = {
+			culture = chimer
+			NOT = { religion = sixth_house }
+			NOT = { is_government_potential = dagoth_government }
+			higher_tier_than = BARON
+			is_patrician = no
+			NOT = { controls_religion = yes }
+		}
+		
+		color = { 8 129 114 }
+		
+		builds_with_piety = { 
+			TRIBAL FORT
+		}
+		uses_piety_for_law_change = yes
+		allow_looting = yes
+		dukes_called_kings = yes
+		builds_with_piety = {
+			TRIBAL FORT
+		}
+		barons_need_dynasty = yes
+		can_build_castle = no
+		can_build_city = yes
+		can_build_temple = yes
+		can_build_tribal = yes
+		can_build_hospitals = yes
+		can_build_forts = yes
+		capital_move_delay = 600
+		## Modifiers
+		court_size_modifier = -5
+	}
+	ashkhanate_government = {
+		preferred_holdings = { TRIBAL }
+		allowed_holdings = { 
+			TRIBAL
+			CASTLE
+			FORT
+			HOSPITAL
+		}
+		accepts_liege_governments = {
+			muslim_government
+			theocracy_government
+			reformed_imperial_commune_government
+		}
+		free_revoke_on_governments = {
+			tribal_government
+		}
+		vassal_call_to_arms = {
+			ashkhanate_government
+		}
+		no_vassal_tax = {
+			ashkanate_government
+		}
+		frame_suffix = "_nomadic"
+		potential = {
+			culture = ashlander
+			NOT = { religion = sixth_house }
+			NOT = { is_government_potential = dagoth_government }
+			is_patrician = no
+			NOT = { controls_religion = yes }
+		}
+		
+		color = { 106 108 109 }
+		
+		dukes_called_kings = yes
+		builds_with_prestige = {
+			TRIBAL FORT
+		}
+		barons_need_dynasty = yes
+		allow_looting = yes
+		free_levies_in_offensive_war = yes
+		ignores_de_jure_laws = yes
+		can_build_castle = no
+		can_build_city = no
+		can_build_temple = yes
+		can_build_tribal = yes
+		can_build_hospitals = yes
+		can_build_forts = yes
+		capital_move_delay = 25
+		aggression = 1
+		## Modifiers
+		demesne_size = 2
+		court_size_modifier = 5
+	}
+}
